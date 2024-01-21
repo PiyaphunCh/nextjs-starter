@@ -1,10 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit'
-import setNameSlice from './features/setNameSlice'
+import pokemon from './features/pokemonSlice'
 
 export const bookStore = () => {
   return configureStore({
     reducer: {
-      setNameSlice: setNameSlice
+      pokemon: pokemon
     }
   })
 }
